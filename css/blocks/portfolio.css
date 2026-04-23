@@ -1,0 +1,85 @@
+/* =============================================
+   BLOCKS: PORTFOLIO GRID SYSTEM
+   ============================================= */
+
+.portfolio {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.portfolio__grid {
+  display: grid;
+  gap: var(--space-32);
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 var(--space-32) var(--space-48);
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "business"
+    "corporate"
+    "profile"
+    "personal";
+}
+
+@media (min-width: 768px) {
+  .portfolio__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "business corporate"
+      "profile profile"
+      "personal personal";
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "business profile corporate"
+      "business personal corporate";
+  }
+}
+
+.portfolio__business {
+  grid-area: business;
+  min-width: 0;
+}
+
+.portfolio__profile {
+  grid-area: profile;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.portfolio__corporate {
+  grid-area: corporate;
+  min-width: 0;
+}
+
+.portfolio__personal {
+  grid-area: personal;
+  min-width: 0;
+}
+
+.portfolio__avatar {
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid var(--color-white);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+  margin-bottom: var(--space-32);
+  position: relative;
+  z-index: 20;
+  background: var(--color-white);
+  animation: fadeDown 0.8s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}

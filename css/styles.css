@@ -1,0 +1,9 @@
+@import 'fonts.css';
+@import 'normalize.css';
+@import 'blocks/portfolio.css';
+@import 'blocks/header.css';
+@import 'blocks/card.css';
+@import 'blocks/button.css';
+@import 'blocks/footer.css';
+@import 'blocks/animations.css';
+@import 'blocks/sections.css';
