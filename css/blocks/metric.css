@@ -2,7 +2,7 @@
 .metric-grid {
   display: flex;
   gap: var(--space-8);
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: var(--space-24);
 }
 
