@@ -1,7 +1,8 @@
 (function () {
   'use strict';
 
-  const BUSINESS_PAGE_URL = './html/buisness.html';
+  const BUSINESS_PAGE_URL =
+    window.location.protocol === 'file:' ? './html/business.html' : '/business';
 
   const UI = {
     init() {
