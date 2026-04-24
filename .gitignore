@@ -1,0 +1,15 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# Cloudflare local/state files
+.wrangler/
+
+# Logs
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

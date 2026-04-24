@@ -1,0 +1,8 @@
+name = "srttrail-leads"
+main = "js/worker/index.js"
+compatibility_date = "2026-04-15"
+
+# Optional dashboard vars:
+# ALLOWED_ORIGIN = "https://srttrail.dev"
+# LEAD_TO_EMAIL = "owner@example.com"
+# LEAD_FROM_EMAIL = "Site Leads <leads@example.com>"

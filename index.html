@@ -3,15 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vedant Patel - Software Engineer & Founder of SRTtrail.dev. Specializing in custom web design, Vanilla JS/CSS development, SEO optimization, accessibility, and high-performance web solutions for small businesses and startups in Scottsdale, AZ." />
-  <meta name="keywords" content="Vedant Patel, SRTtrail, SRTtrail.dev, ScorchTrail, software engineer, software developer, web developer, front end developer, full stack developer, Scottsdale web developer, Arizona web developer, Phoenix web developer, ASU software engineering, custom websites, custom web design, affordable web design, small business web design, small business website, startup website, portfolio website, landing page design, Vanilla JavaScript, Vanilla CSS, HTML CSS JavaScript, semantic HTML, CSS Grid, Flexbox, SEO optimization, local SEO, technical SEO, on-page SEO, accessibility, WCAG, web accessibility, high performance websites, Lighthouse 100, fast websites, website speed optimization, web hosting, custom branding, logo design, mobile responsive design, cross-browser compatibility, clean code, maintainable code, TripleTen bootcamp, web development student, junior developer, freelance web developer, hire web developer, website redesign, affordable web developer Scottsdale, website from scratch, no WordPress, no frameworks, vanillaJS portfolio" />
+  <meta name="description" content="SRTtrail.dev hub for custom web development, business website services, and high-performance accessible web experiences in Arizona." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="author" content="Vedant Patel" />
-  <meta property="og:title" content="Vedant Patel | Software Engineer & Web Developer" />
+  <meta name="theme-color" content="#0e1111" />
+  <meta name="geo.region" content="US-AZ" />
+  <meta name="geo.placename" content="Scottsdale, Arizona" />
+  <meta name="geo.position" content="33.4942;-111.9261" />
+  <meta name="ICBM" content="33.4942, -111.9261" />
+  <link rel="canonical" href="https://srttrail.dev/" />
+  <meta property="og:title" content="SRTtrail.dev | HUB" />
   <meta property="og:description" content="Custom websites built for small businesses. Clean code, top Lighthouse scores, and real results. Based in Scottsdale, AZ." />
   <meta property="og:type" content="website" />
-  <title>Vedant Patel | Software Engineer & Web Developer | SRTtrail.dev</title>
+  <meta property="og:url" content="https://srttrail.dev/" />
+  <meta property="og:site_name" content="SRTtrail.dev" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://srttrail.dev/assets/srtlogo-banner.png" />
+  <meta property="og:image:alt" content="SRTtrail.dev preview banner" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SRTtrail.dev | HUB" />
+  <meta name="twitter:description" content="Hub page for SRTtrail.dev web development and business services." />
+  <meta name="twitter:image" content="https://srttrail.dev/assets/srtlogo-banner.png" />
+  <title>SRTtrail.dev | Hub</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "SRTtrail.dev",
+      "url": "https://srttrail.dev/",
+      "areaServed": "Arizona",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Scottsdale",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/vp-srttraill/",
+        "https://github.com/ScorchTrail",
+        "https://www.instagram.com/scortchtrail/"
+      ]
+    }
+  </script>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/blocks/portfolio.css" />
+  <link rel="stylesheet" href="css/blocks/header.css" />
+  <link rel="stylesheet" href="css/blocks/card.css" />
+  <link rel="stylesheet" href="css/blocks/metric.css" />
+  <link rel="stylesheet" href="css/blocks/project.css" />
+  <link rel="stylesheet" href="css/blocks/social.css" />
+  <link rel="stylesheet" href="css/blocks/footer.css" />
+  <link rel="stylesheet" href="css/blocks/animations.css" />
 </head>
 <body>
   <div class="portfolio">
@@ -27,7 +71,7 @@
           <div class="card__body">
             <div class="card__logo-wrap">
               <div class="card__logo-box">
-                <img src="assets/srttrail-logo.svg" alt="SRTtrail logo" class="card__logo-img" />
+                <img src="assets/srttrail-logo.svg" alt="SRTtrail logo" class="card__logo-img" width="96" height="96" />
               </div>
               <span class="card__logo-text">SRTtrail<span class="card__title-accent">.dev</span></span>
             </div>
@@ -41,7 +85,7 @@
               Beautiful, accessible websites you can truly call your own without the massive budgets and cold, technical jargon of big corporate agencies.
             </p>
 
-            <button class="card__button card__button--primary" id="btn-business">Start Your Project ↗</button>
+            <a class="card__button card__button--primary" id="btn-business" href="./html/buisness.html">Start Your Project ↗</a>
 
             <h3 class="card__subtitle card__subtitle--heading">Key Capabilities</h3>
             <div class="card__tag-group">
@@ -85,7 +129,7 @@
       </div>
 
       <div class="portfolio__profile">
-        <img src="assets/dev-avatar.webp" alt="Vedant Patel Portrait" class="portfolio__avatar" />
+        <img src="assets/dev-avatar.webp" alt="Vedant Patel Portrait" class="portfolio__avatar" fetchpriority="high" />
 
         <article class="card card--bio card--delay-2">
           <div class="card__body">

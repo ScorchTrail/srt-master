@@ -1,10 +1,13 @@
 (function () {
   'use strict';
 
+  const BUSINESS_PAGE_URL = './html/buisness.html';
+
   const UI = {
     init() {
       this.bindTiltEffect();
       this.bindNavigation();
+      this.warmBusinessPage();
     },
 
     bindTiltEffect() {
@@ -35,13 +38,49 @@
     },
 
     bindNavigation() {
-      document.getElementById('btn-business')?.addEventListener('click', (e) => {
-        e.preventDefault();
-      });
-
       document.getElementById('btn-resume')?.addEventListener('click', (e) => {
         e.preventDefault();
       });
+    },
+
+    warmBusinessPage() {
+      const cta = document.getElementById('btn-business');
+      if (!cta) {
+        return;
+      }
+
+      if (window.location.protocol === 'file:') {
+        cta.addEventListener('click', (event) => {
+          event.preventDefault();
+          window.location.href = BUSINESS_PAGE_URL;
+        });
+        return;
+      }
+
+      let hasPrefetched = false;
+
+      const prefetchBusinessPage = () => {
+        if (hasPrefetched) {
+          return;
+        }
+
+        hasPrefetched = true;
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.as = 'document';
+        link.href = BUSINESS_PAGE_URL;
+        document.head.appendChild(link);
+      };
+
+      cta.addEventListener('pointerenter', prefetchBusinessPage, { once: true });
+      cta.addEventListener('focus', prefetchBusinessPage, { once: true });
+
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(prefetchBusinessPage, { timeout: 1500 });
+        return;
+      }
+
+      window.setTimeout(prefetchBusinessPage, 1200);
     }
   };
 
