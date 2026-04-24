@@ -35,16 +35,12 @@
     },
 
     bindNavigation() {
-      const navigate = (route) => console.log(`Navigating to route: /${route}`);
-
       document.getElementById('btn-business')?.addEventListener('click', (e) => {
         e.preventDefault();
-        navigate('business');
       });
 
       document.getElementById('btn-resume')?.addEventListener('click', (e) => {
         e.preventDefault();
-        navigate('resume');
       });
     }
   };

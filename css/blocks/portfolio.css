@@ -4,7 +4,6 @@
 
 .portfolio {
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -28,7 +27,7 @@
     "personal";
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .portfolio__grid {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -58,6 +57,7 @@
   flex-direction: column;
   align-items: center;
   min-width: 0;
+  justify-content: space-between;
 }
 
 .portfolio__corporate {

@@ -1,0 +1,31 @@
+.social-nav {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+}
+
+.social-nav__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: var(--color-black);
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+.social-nav__btn:hover {
+  transform: translateY(-4px);
+  background: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+.social-nav__icon {
+  width: 24px;
+  height: 24px;
+}
