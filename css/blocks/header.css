@@ -42,3 +42,10 @@
   background-color: var(--color-accent);
   display: inline-block;
 }
+
+@media (max-width: 380px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
