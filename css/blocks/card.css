@@ -61,6 +61,7 @@
 }
 
 .card--bio {
+  --card-muted: var(--color-muted-strong);
   height: max-content;
   width: 100%;
   text-align: center;
@@ -126,8 +127,8 @@
 }
 
 .card__logo-img {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
 }
 
@@ -214,7 +215,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
-  margin-bottom: var(--space-32);
+  margin-bottom: var(--space-16);
 }
 
 .card__tag-group {

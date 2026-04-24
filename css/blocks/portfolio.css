@@ -16,15 +16,15 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 var(--space-32) var(--space-48);
+  padding: 0 var(--space-48) 0;
   position: relative;
   z-index: 10;
   flex: 1;
   grid-template-columns: 1fr;
   grid-template-areas:
+    "profile"
     "business"
     "corporate"
-    "profile"
     "personal";
 }
 
@@ -32,8 +32,8 @@
   .portfolio__grid {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "business corporate"
       "profile profile"
+      "business corporate"
       "personal personal";
   }
 }
@@ -71,8 +71,8 @@
 }
 
 .portfolio__avatar {
-  width: 192px;
-  height: 192px;
+  width: 224px;
+  height: 224px;
   border-radius: 50%;
   object-fit: cover;
   border: 8px solid var(--color-white);

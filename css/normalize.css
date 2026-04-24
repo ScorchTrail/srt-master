@@ -15,7 +15,8 @@
   --color-bg: #F4F6F5;
   --color-white: #FFFFFF;
   --color-black: #000000;
-  --color-muted: #7a8a85;
+  --color-muted: #5f6f69;
+  --color-muted-strong: #4a5954;
 
   /* Typography Setup */
   --font-ui: 'Inter', system-ui, sans-serif;
