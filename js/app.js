@@ -2,7 +2,7 @@
   'use strict';
 
   const BUSINESS_PAGE_URL =
-    window.location.protocol === 'file:' ? './html/business.html' : '/business';
+    window.location.protocol === 'file:' ? './html/business.html' : '/html/business.html';
 
   const UI = {
     init() {
