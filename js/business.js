@@ -263,11 +263,11 @@ function persistData() {
         leadStarted: state.hasSentLeadStart,
         leadCompleted: state.hasSentLeadComplete
     };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
 }
 
 function loadPersistedData() {
-    const saved = localStorage.getItem(STORAGE_KEY);
+    const saved = sessionStorage.getItem(STORAGE_KEY);
     if (!saved) {
         return;
     }
@@ -281,7 +281,7 @@ function loadPersistedData() {
         state.hasSentLeadComplete = Boolean(parsed.leadCompleted);
     } catch (error) {
         console.error('Could not load saved data.', error);
-        localStorage.removeItem(STORAGE_KEY);
+        sessionStorage.removeItem(STORAGE_KEY);
     }
 }
 
@@ -976,7 +976,7 @@ function resetAllData() {
         return;
     }
 
-    localStorage.removeItem(STORAGE_KEY);
+    sessionStorage.removeItem(STORAGE_KEY);
     window.location.reload();
 }
 

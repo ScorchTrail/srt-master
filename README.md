@@ -8,7 +8,7 @@ A lightweight, static web project that combines:
 ## Structure
 
 - `index.html` : Public hub page (`/`)
-- `html/business.html` : Primary business page content
+- `business/index.html` : Primary business page content (`/business/`)
 - `assets/` : Shared images and brand assets
 - `fonts/` : Shared web fonts
 - `css/` : Shared stylesheets (`styles.css`, `blocks/business.css`, component blocks)
@@ -27,7 +27,7 @@ python -m http.server 8080
 
 Then open:
 - `http://localhost:8080/`
-- `http://localhost:8080/html/business.html`
+- `http://localhost:8080/business/`
 
 ## SEO Notes
 

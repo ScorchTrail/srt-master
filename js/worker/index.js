@@ -15,9 +15,8 @@ function getCorsOrigin(request, env) {
     const allowedOrigin = String(env.ALLOWED_ORIGIN || '').trim();
     const requestOrigin = request.headers.get('Origin') || '';
 
-    // Backward-compatible local/testing mode when ALLOWED_ORIGIN is not configured.
     if (!allowedOrigin) {
-        return '*';
+        return '';
     }
 
     return requestOrigin === allowedOrigin ? allowedOrigin : '';
@@ -25,9 +24,15 @@ function getCorsOrigin(request, env) {
 
 export default {
     async fetch(request, env) {
+        const configuredOrigin = String(env.ALLOWED_ORIGIN || '').trim();
+
+        if (!configuredOrigin) {
+            return new Response('Server misconfiguration', { status: 500 });
+        }
+
         const corsOrigin = getCorsOrigin(request, env);
 
-        if (String(env.ALLOWED_ORIGIN || '').trim() && !corsOrigin) {
+        if (!corsOrigin) {
             return new Response('Forbidden origin', { status: 403 });
         }
 

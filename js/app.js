@@ -2,7 +2,7 @@
   'use strict';
 
   const BUSINESS_PAGE_URL =
-    window.location.protocol === 'file:' ? './html/business.html' : '/html/business.html';
+    window.location.protocol === 'file:' ? './business/index.html' : '/business/';
 
   const UI = {
     init() {
@@ -49,6 +49,8 @@
       if (!cta) {
         return;
       }
+
+      cta.href = BUSINESS_PAGE_URL;
 
       if (window.location.protocol === 'file:') {
         cta.addEventListener('click', (event) => {
