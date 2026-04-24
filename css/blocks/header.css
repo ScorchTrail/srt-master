@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-32) var(--space-64) var(--space-32);
+  gap: clamp(10px, 2.2vw, 20px);
+  padding: clamp(16px, 2.8vw, 32px) clamp(16px, 5vw, 64px);
   max-width: 1300px;
   margin: 0 auto;
   width: 100%;
@@ -19,10 +20,10 @@
 .header__status {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
-  font-size: var(--text-xs);
+  gap: clamp(4px, 1.1vw, 8px);
+  font-size: clamp(0.62rem, 1.7vw, 0.75rem);
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: clamp(0.04em, 0.2vw, 0.1em);
   text-transform: uppercase;
 }
 
