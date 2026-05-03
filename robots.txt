@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://srttrail.dev/sitemap.xml

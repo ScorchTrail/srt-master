@@ -11,6 +11,12 @@
     },
 
     bindTiltEffect() {
+      const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!supportsHover || prefersReducedMotion) {
+        return;
+      }
+
       const cards = document.querySelectorAll('.card');
       cards.forEach((card) => {
         card.addEventListener('mousemove', this.handleMouseMove);

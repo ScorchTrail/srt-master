@@ -1,0 +1,21 @@
+{
+  "name": "Vedant Patel | SRTtrail.dev",
+  "short_name": "SRTtrail",
+  "description": "Vedant Patel, founder of SRTtrail.dev — web developer & tech consultant based in Scottsdale, AZ.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F6F5",
+  "theme_color": "#0e1111",
+  "icons": [
+    {
+      "src": "assets/srt-android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/srt-android-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

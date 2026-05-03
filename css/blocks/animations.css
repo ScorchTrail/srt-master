@@ -25,3 +25,15 @@
     transform: translateY(0);
   }
 }
+
+/* Keep first paint deterministic on constrained/mobile devices. */
+@media (max-width: 767px), (hover: none), (prefers-reduced-motion: reduce) {
+  .header,
+  .card,
+  .portfolio__avatar,
+  .footer {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
