@@ -7,7 +7,6 @@
   const UI = {
     init() {
       this.bindTiltEffect();
-      this.bindNavigation();
       this.warmBusinessPage();
     },
 
@@ -36,12 +35,6 @@
     handleMouseLeave() {
       this.style.transform = '';
       this.style.transition = 'transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)';
-    },
-
-    bindNavigation() {
-      document.getElementById('btn-resume')?.addEventListener('click', (e) => {
-        e.preventDefault();
-      });
     },
 
     warmBusinessPage() {

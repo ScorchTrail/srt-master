@@ -311,11 +311,58 @@
   box-shadow: 0 16px 32px rgba(0, 103, 79, 0.25);
 }
 
+/* Recipe book is not ready: keep this CTA muted and static. */
+.card__button--coming-soon {
+  background: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.72);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+  cursor: not-allowed;
+  transition: none;
+}
+
+.card__button--coming-soon:hover {
+  background: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.72);
+  transform: none;
+  box-shadow: none;
+}
+
+.card__button--coming-soon:disabled {
+  opacity: 1;
+}
+
+.card__button-label {
+  display: inline-block;
+}
+
+.card__caption--coming-soon {
+  display: inline-flex;
+  align-self: flex-end;
+  margin-top: var(--space-12);
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+  padding: 6px var(--space-16);
+  line-height: 1.25;
+  pointer-events: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
 .card__footer {
   margin-top: auto;
 }
 
 .card__footer--flush {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 0;
 }
 

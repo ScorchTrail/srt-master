@@ -15,7 +15,7 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 var(--space-48) 0;
+  padding: 0 var(--space-32) 0;
   position: relative;
   z-index: 10;
   flex: 1;
