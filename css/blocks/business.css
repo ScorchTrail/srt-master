@@ -589,6 +589,7 @@ h3 {
 
 .questionnaire__description {
     margin: 0 0 var(--space-16);
+    padding-bottom: var(--space-16) ;
     border-bottom: 0.0625rem solid var(--color-surface-muted);
     color: var(--color-text-muted);
     font-size: var(--type-1);
