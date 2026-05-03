@@ -189,6 +189,14 @@
   white-space: nowrap;
 }
 
+.card__label-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: -2px;
+  color: currentColor;
+}
+
 .card__subtitle--strong {
   font-weight: 600;
   color: var(--card-text);
