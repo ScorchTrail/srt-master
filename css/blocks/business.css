@@ -242,7 +242,7 @@ h3 {
 }
 
 .hero {
-    margin-bottom: 0;
+    margin-bottom: var(--space-16);
     display: grid;
     grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
     gap: var(--grid-gutter);
