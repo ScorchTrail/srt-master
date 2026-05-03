@@ -11,9 +11,14 @@ A lightweight, static web project that combines:
 - `business/index.html` : Primary business page content (`/business/`)
 - `assets/` : Shared images and brand assets
 - `fonts/` : Shared web fonts
-- `css/` : Shared stylesheets (`styles.css`, `blocks/business.css`, component blocks)
+- `css/` : Shared stylesheets (`normalize.css`, `fonts.css`, `blocks/` component styles)
 - `js/` : Shared scripts (`app.js`, `business.js`, `worker/index.js`)
 - `wrangler.toml` : Cloudflare Worker configuration (repo root)
+
+## Launch Notes
+
+- The hub page loads block styles individually so above-the-fold CSS can render immediately while secondary blocks are preloaded.
+- The discovery form posts to the Cloudflare Worker configured in `wrangler.toml`; production requires `RESEND_API_KEY`, `LEAD_TO_EMAIL`, and `LEAD_FROM_EMAIL`.
 
 ## Local Run
 

@@ -311,10 +311,10 @@ function updateWizardChrome() {
 
     if (state.currentStep === pillarData.length - 1) {
         elements.nextButton.textContent = 'Calculate Scope ✨';
-        elements.nextButton.classList.add('wizard__button-final');
+        elements.nextButton.classList.add('wizard__button--final');
     } else {
         elements.nextButton.textContent = 'Next Step →';
-        elements.nextButton.classList.remove('wizard__button-final');
+        elements.nextButton.classList.remove('wizard__button--final');
     }
 
     updateHeroCardVisibility();
@@ -460,7 +460,7 @@ function renderStep() {
     const fragment = document.createDocumentFragment();
 
     const title = createElement('h2', {
-        className: 'questionnaire__title typography__display',
+        className: 'questionnaire__title type-display',
         text: step.title
     });
     const description = createElement('p', {
@@ -565,17 +565,17 @@ function showToast(title, message) {
     window.clearTimeout(state.toastTimer);
     elements.toastTitle.textContent = title;
     elements.toastMessage.textContent = message;
-    elements.toast.classList.remove('toast-hidden');
+    elements.toast.classList.remove('toast--hidden');
     state.toastTimer = window.setTimeout(() => {
-        elements.toast.classList.add('toast-hidden');
+        elements.toast.classList.add('toast--hidden');
     }, TOAST_TIMEOUT_MS);
 }
 
 function showSuccessBubble() {
     window.clearTimeout(state.successTimer);
-    elements.successBubble.classList.remove('success-bubble-hidden');
+    elements.successBubble.classList.remove('success-bubble--hidden');
     state.successTimer = window.setTimeout(() => {
-        elements.successBubble.classList.add('success-bubble-hidden');
+        elements.successBubble.classList.add('success-bubble--hidden');
     }, SUCCESS_TIMEOUT_MS);
 }
 

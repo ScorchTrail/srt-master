@@ -19,10 +19,20 @@
   transition: transform 0.2s, background 0.2s, border-color 0.2s;
 }
 
+.project-item--static {
+  cursor: default;
+}
+
 .project-item:hover {
   background: rgba(0, 0, 0, 0.25);
   border-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
+}
+
+.project-item--static:hover {
+  background: rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.04);
+  transform: none;
 }
 
 .project-item__icon {
@@ -37,8 +47,19 @@
   flex-shrink: 0;
 }
 
+.project-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .project-item__name {
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-white);
+}
+
+.project-item__meta {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.72);
 }

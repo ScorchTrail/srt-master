@@ -186,7 +186,7 @@
 </head>
 <body class="app">
 
-    <aside id="success-bubble" class="success-bubble success-bubble-hidden" role="status" aria-live="polite" aria-atomic="true">
+    <aside id="success-bubble" class="success-bubble success-bubble--hidden" role="status" aria-live="polite" aria-atomic="true">
         <span class="success-bubble__icon">✅</span>
         <div class="success-bubble__content">
             <strong class="success-bubble__title">Submission Received!</strong>
@@ -195,18 +195,17 @@
     </aside>
 
     <header class="header">
-        <div class="header__grid"></div>
         <div class="header__glow"></div>
 
         <div class="hero">
             <a class="hero__brand" href="/" aria-label="Back to SRTtrail.dev hub">
                 <img src="../assets/srttrail-logo.svg" alt="SRTtrail.dev logo" class="hero__logo" width="48" height="48">
-                <span class="typography__display">SRTtrail<span class="hero__accent">.dev</span></span>
+                <span class="type-display">SRTtrail<span class="hero__accent">.dev</span></span>
             </a>
         </div>
 
         <div class="hero__content">
-            <h1 class="typography__display hero__title">Your Website Should Be an Investment That Pays for Itself.</h1>
+            <h1 class="type-display hero__title">Your Website Should Be an Investment That Pays for Itself.</h1>
 
             <div class="hero__intro">
                 <div id="hero-card" class="hero__card">
@@ -239,11 +238,11 @@
                 </div>
 
                 <div class="wizard__actions">
-                    <button id="btn-prev" type="button" class="wizard__button wizard__button-secondary u-hidden">
+                    <button id="btn-prev" type="button" class="wizard__button wizard__button--secondary u-hidden">
                         &larr; Back
                     </button>
                     <div class="wizard__actions-spacer"></div>
-                    <button id="btn-next" type="submit" class="wizard__button wizard__button-primary">
+                    <button id="btn-next" type="submit" class="wizard__button wizard__button--primary">
                         Next Step &rarr;
                     </button>
                 </div>
@@ -252,7 +251,7 @@
 
         <section id="loading-container" class="loading u-hidden" role="status" aria-live="polite" aria-labelledby="loading-title">
             <div class="loader" aria-hidden="true"></div>
-            <h2 id="loading-title" class="typography__display loading__title">Calculating your project outline...</h2>
+            <h2 id="loading-title" class="type-display loading__title">Calculating your project outline...</h2>
             <p class="loading__text">Putting together the pieces of your new digital storefront.</p>
         </section>
 
@@ -260,7 +259,7 @@
             <div class="results__main">
                 <figure class="results__card pop-in">
                     <figcaption>
-                        <h3 id="results-breakdown-title" class="typography__display results__card-title">Your Custom Project Outline</h3>
+                        <h3 id="results-breakdown-title" class="type-display results__card-title">Your Custom Project Outline</h3>
                         <p class="results__card-intro">Each focus area shows how much attention your project will likely need during design and build.</p>
                     </figcaption>
                     <div class="chart-container" aria-labelledby="results-breakdown-title">
@@ -271,20 +270,20 @@
 
             <div id="results-hero" class="results__hero">
                 <p class="results__eyebrow">Discovery Complete</p>
-                <h2 id="results-title" class="typography__display results__title">You did it!</h2>
+                <h2 id="results-title" class="type-display results__title">You did it!</h2>
                 <p class="results__description">
                     Thanks for sharing your business goals. Your custom project outline below maps where design and development effort will have the strongest impact.
                 </p>
             </div>
 
             <div class="results__actions">
-                <h3 class="typography__display results__actions-title">Need to make a quick change?</h3>
+                <h3 class="type-display results__actions-title">Need to make a quick change?</h3>
 
                 <div class="results__links">
-                    <button type="button" data-action="edit" class="results__link results__link-edit">
+                    <button type="button" data-action="edit" class="results__link results__link--edit">
                         <span>&larr;</span> Go back and edit answers
                     </button>
-                    <button type="button" data-action="reset" class="results__link results__link-reset">
+                    <button type="button" data-action="reset" class="results__link results__link--reset">
                         <span>↺</span> Start over completely
                     </button>
                 </div>
@@ -292,7 +291,7 @@
         </section>
     </main>
 
-    <div id="error-toast" class="toast toast-error toast-hidden" role="alert" aria-live="assertive" aria-atomic="true">
+    <div id="error-toast" class="toast toast--error toast--hidden" role="alert" aria-live="assertive" aria-atomic="true">
         <span class="toast__icon">⚠️</span>
         <div class="toast__content">
             <p class="toast__title" id="toast-title">Oops!</p>
