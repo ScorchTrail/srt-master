@@ -215,6 +215,18 @@
   margin-bottom: var(--space-16);
 }
 
+/* Combined modifiers for cleaner HTML */
+.card__subtitle--label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--card-text);
+  display: block;
+  margin-bottom: var(--space-8);
+  white-space: nowrap;
+}
+
 .card__group {
   display: flex;
   flex-direction: column;
