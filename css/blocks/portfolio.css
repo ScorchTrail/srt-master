@@ -46,14 +46,6 @@
   }
 }
 
-@media (max-width: 1023px) {
-  .portfolio__corporate,
-  .portfolio__personal {
-    content-visibility: auto;
-    contain-intrinsic-size: 900px;
-  }
-}
-
 .portfolio__business {
   grid-area: business;
   min-width: 0;
