@@ -1,5 +1,5 @@
 name = "srttrail-leads"
-main = "js/worker/index.js"
+main = "js/workers/index.js"
 compatibility_date = "2026-04-15"
 
 [vars]

@@ -19,7 +19,7 @@
 /* --- Inter: variable font, full weight axis 100–900 --- */
 @font-face {
     font-family: 'Inter';
-    src: url('../../fonts/Inter.woff2') format('woff2');
+    src: url('../../assets/fonts/Inter.woff2') format('woff2');
     font-style: normal;
     font-weight: 100 900;
     font-display: optional;
@@ -28,7 +28,7 @@
 /* --- Quantico: single file, CSS weight synthesis for bold --- */
 @font-face {
     font-family: 'Quantico';
-    src: url('../../fonts/Quantico.woff2') format('woff2');
+    src: url('../../assets/fonts/Quantico.woff2') format('woff2');
     font-style: normal;
     font-weight: 400 700;
     font-display: optional;

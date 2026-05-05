@@ -11,7 +11,7 @@ A lightweight, static web project that combines:
 - `business/index.html` : Primary business page content (`/business/`)
 - `assets/` : Shared images and brand assets
 - `fonts/` : Shared web fonts
-- `css/` : Shared stylesheets (`normalize.css`, `fonts.css`, `blocks/` component styles)
+- `css/` : Shared stylesheets (`normalize.css`, `fonts.css`, `components/` component styles)
 - `js/` : Shared scripts (`app.js`, `business.js`, `worker/index.js`)
 - `wrangler.toml` : Cloudflare Worker configuration (repo root)
 

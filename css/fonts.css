@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'Inter';
-	src: url('../fonts/Inter.woff2') format('woff2');
+	src: url('../assets/fonts/Inter.woff2') format('woff2');
 	font-display: optional;
 	font-style: normal;
 	font-weight: 400 900;
@@ -10,7 +10,7 @@
 
 @font-face {
 	font-family: 'Quantico';
-	src: url('../fonts/Quantico.woff2') format('woff2');
+	src: url('../assets/fonts/Quantico.woff2') format('woff2');
 	font-display: optional;
 	font-style: normal;
 	font-weight: 400 700;
@@ -18,7 +18,7 @@
 
 @font-face {
 	font-family: 'Caveat';
-	src: url('../fonts/Caveat.woff2') format('woff2');
+	src: url('../assets/fonts/Caveat.woff2') format('woff2');
 	font-display: optional;
 	font-style: normal;
 	font-weight: 600;
