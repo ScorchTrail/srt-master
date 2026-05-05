@@ -1115,7 +1115,7 @@ h3 {
 
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0.01;
         transform: translateY(var(--space-16));
     }
 
@@ -1127,7 +1127,7 @@ h3 {
 
 @keyframes popIn {
     from {
-        opacity: 0;
+        opacity: 0.01;
         transform: scale(0.96);
     }
 
