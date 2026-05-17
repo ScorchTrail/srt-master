@@ -287,6 +287,12 @@
   margin-bottom: var(--space-32);
 }
 
+.card__button-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 .card__button--flush {
   margin-bottom: 0;
 }

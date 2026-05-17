@@ -31,6 +31,12 @@
   color: var(--color-muted-strong);
 }
 
+.header__icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 .header__status {
   color: var(--color-primary);
 }

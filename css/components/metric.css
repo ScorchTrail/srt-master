@@ -3,7 +3,6 @@
   display: flex;
   gap: var(--space-8);
   justify-content: space-around;
-  padding-top: var(--space-24);
 }
 
 .metric-item {
@@ -41,4 +40,18 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  text-wrap: balance;
+}
+
+@media (max-width: 640px) {
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
+  }
+
+  .metric-item {
+    min-width: 0;
+  }
 }

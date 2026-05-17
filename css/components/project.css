@@ -47,6 +47,13 @@
   flex-shrink: 0;
 }
 
+.project-item__icon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 .project-item__content {
   display: flex;
   flex-direction: column;

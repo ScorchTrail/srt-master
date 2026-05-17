@@ -89,8 +89,6 @@ const pillarData = [
                 maxSelect: MAX_PRIORITIES,
                 options: [
                     { value: 'visuals', label: '🎨 Custom Branding & Visuals', desc: 'A sharper visual identity and a stronger premium feel.' },
-                    { value: 'seo', label: '📍 Local SEO Focus', desc: 'Extra effort on Google Maps visibility and local search reach.' },
-                    { value: 'booking', label: '📅 Online Booking / Scheduling', desc: 'A smoother way for customers to book with you any time.' },
                     { value: 'ecommerce', label: '🛍️ E-commerce / Selling', desc: 'Sell products, deposits, or gift cards directly from the site.' },
                     { value: 'reviews', label: '⭐ Customer Trust & Reviews', desc: 'Showcase social proof and turn reputation into conversions.' },
                     { value: 'portfolio', label: '📸 Project Galleries / Menus', desc: 'Present offerings clearly with visual depth and easy browsing.' },
@@ -671,13 +669,6 @@ function computeMetrics() {
 
     if (features.includes('visuals')) {
         metrics[0] += 36;
-    }
-    if (features.includes('seo')) {
-        metrics[3] += 36;
-    }
-    if (features.includes('booking')) {
-        metrics[1] += 24;
-        metrics[4] += 16;
     }
     if (features.includes('ecommerce')) {
         metrics[1] += 24;
