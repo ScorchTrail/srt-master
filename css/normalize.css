@@ -4,24 +4,24 @@
 
 :root {
   /* Strict Color Palette */
-  --color-primary: #00674F;
-  --color-primary-lt: #00876A;
-  --color-primary-md: #004D3A;
-  --color-primary-dk: #002E23;
+  --color-primary: #00674f;
+  --color-primary-lt: #00876a;
+  --color-primary-md: #004d3a;
+  --color-primary-dk: #002e23;
   --color-corp-1: #141414;
   --color-corp-2: #0a0a0a;
 
   --color-accent: #10b981;
-  --color-bg: #F4F6F5;
-  --color-white: #FFFFFF;
+  --color-bg: #f4f6f5;
+  --color-white: #ffffff;
   --color-black: #000000;
   --color-muted: #5f6f69;
   --color-muted-strong: #4a5954;
 
   /* Typography Setup */
-  --font-ui: 'Inter', system-ui, sans-serif;
-  --font-heading: 'Quantico', sans-serif;
-  --font-hand: 'Caveat', cursive;
+  --font-ui: "Inter", system-ui, sans-serif;
+  --font-heading: "Quantico", sans-serif;
+  --font-hand: "Caveat", cursive;
 
   /* Typography Scale (Major Third - 1.250 Base 16px) */
   --text-base: 1rem;

@@ -1,6 +1,7 @@
 # SRTtrail.dev
 
 A lightweight, static web project that combines:
+
 - A central hub page for brand and portfolio navigation
 - A business discovery experience for lead qualification
 - A serverless worker folder for backend lead handling
@@ -31,6 +32,7 @@ python -m http.server 8080
 ```
 
 Then open:
+
 - `http://localhost:8080/`
 - `http://localhost:8080/business/`
 

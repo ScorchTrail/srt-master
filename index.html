@@ -1,290 +1,621 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vedant Patel, founder of SRTtrail.dev, builds fast, accessible websites and showcases projects, skills, and web services for businesses and growing brands." />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="author" content="Vedant Patel" />
-  <meta name="theme-color" content="#0e1111" />
-  <meta name="geo.region" content="US-AZ" />
-  <meta name="geo.placename" content="Scottsdale, Arizona" />
-  <meta name="geo.position" content="33.4942;-111.9261" />
-  <meta name="ICBM" content="33.4942, -111.9261" />
-  <link rel="canonical" href="https://srttrail.dev/" />
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-  <meta property="og:title" content="SRTtrail.dev | HUB" />
-  <meta property="og:description" content="Custom websites built for small businesses. Clean code, top Lighthouse scores, and real results. Based in Scottsdale, AZ." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://srttrail.dev/" />
-  <meta property="og:site_name" content="SRTtrail.dev" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://srttrail.dev/assets/images/srtlogo-banner.png" />
-  <meta property="og:image:alt" content="SRTtrail.dev preview banner" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SRTtrail.dev | HUB" />
-  <meta name="twitter:description" content="Hub page for SRTtrail.dev web development and business services." />
-  <meta name="twitter:image" content="https://srttrail.dev/assets/images/srtlogo-banner.png" />
-  <title>Vedant Patel | SRTtrail.dev</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "SRTtrail.dev",
-      "url": "https://srttrail.dev/",
-      "telephone": "+1-502-210-8984",
-      "areaServed": "Arizona",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Scottsdale",
-        "addressRegion": "AZ",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/vp-srttraill/",
-        "https://github.com/ScorchTrail",
-        "https://www.instagram.com/scortchtrail/"
-      ]
-    }
-  </script>
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/srt-apple-touch.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/srt-favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/srt-favicon-16x16.png" />
-  <link rel="icon" type="image/svg+xml" href="assets/images/srttrail-logo.svg" />
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="preload" href="assets/images/dev-avatar.webp" as="image" fetchpriority="high" />
-  <link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/fonts/Quantico.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/fonts/Caveat.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="css/fonts.css" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/components/portfolio.css" />
-  <link rel="stylesheet" href="css/components/header.css" />
-  <link rel="stylesheet" href="css/components/card.css" />
-  <link rel="stylesheet" href="css/components/experience.css" />
-  <link rel="stylesheet" href="css/components/metric.css" />
-  <link rel="stylesheet" href="css/components/project.css" />
-  <link rel="stylesheet" href="css/components/social.css" />
-  <link rel="stylesheet" href="css/components/footer.css" />
-  <link rel="preload" href="css/components/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/components/animations.css" /></noscript>
-</head>
-<body>
-  <div class="portfolio">
-    <header class="header">
-      <div class="header__location"><img src="assets/images/marker.svg" alt="" class="header__icon" width="14" height="14" /> Scottsdale, AZ</div>
-      <div class="header__status"><span class="header__dot"></span> Available for work</div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vedant Patel, founder of SRTtrail.dev, builds fast, accessible websites and showcases projects, skills, and web services for businesses and growing brands."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="Vedant Patel" />
+    <meta name="theme-color" content="#0e1111" />
+    <meta name="geo.region" content="US-AZ" />
+    <meta name="geo.placename" content="Scottsdale, Arizona" />
+    <meta name="geo.position" content="33.4942;-111.9261" />
+    <meta name="ICBM" content="33.4942, -111.9261" />
+    <link rel="canonical" href="https://srttrail.dev/" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta property="og:title" content="SRTtrail.dev | HUB" />
+    <meta
+      property="og:description"
+      content="Custom websites built for small businesses. Clean code, top Lighthouse scores, and real results. Based in Scottsdale, AZ."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://srttrail.dev/" />
+    <meta property="og:site_name" content="SRTtrail.dev" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://srttrail.dev/assets/images/srtlogo-banner.png"
+    />
+    <meta property="og:image:alt" content="SRTtrail.dev preview banner" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SRTtrail.dev | HUB" />
+    <meta
+      name="twitter:description"
+      content="Hub page for SRTtrail.dev web development and business services."
+    />
+    <meta
+      name="twitter:image"
+      content="https://srttrail.dev/assets/images/srtlogo-banner.png"
+    />
+    <title>Vedant Patel | SRTtrail.dev</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "SRTtrail.dev",
+        "url": "https://srttrail.dev/",
+        "telephone": "+1-502-210-8984",
+        "areaServed": "Arizona",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Scottsdale",
+          "addressRegion": "AZ",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/vp-srttraill/",
+          "https://github.com/ScorchTrail",
+          "https://www.instagram.com/scortchtrail/"
+        ]
+      }
+    </script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/srt-apple-touch.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/srt-favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/srt-favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/srttrail-logo.svg"
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="preload"
+      href="assets/images/dev-avatar.webp"
+      as="image"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Quantico.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Caveat.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/components/portfolio.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/card.css" />
+    <link rel="stylesheet" href="css/components/experience.css" />
+    <link rel="stylesheet" href="css/components/metric.css" />
+    <link rel="stylesheet" href="css/components/project.css" />
+    <link rel="stylesheet" href="css/components/social.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link
+      rel="preload"
+      href="css/components/animations.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript
+      ><link rel="stylesheet" href="css/components/animations.css"
+    /></noscript>
+  </head>
+  <body>
+    <div class="portfolio">
+      <header class="header">
+        <div class="header__location">
+          <img
+            src="assets/images/marker.svg"
+            alt=""
+            class="header__icon"
+            width="14"
+            height="14"
+          />
+          Scottsdale, AZ
+        </div>
+        <div class="header__status">
+          <span class="header__dot"></span> Available for work
+        </div>
+      </header>
 
-    <main class="portfolio__grid">
-      <div class="portfolio__business">
-        <article class="card card--business card--delay-1">
-          <div class="card__bg-grid"></div>
-          <div class="card__body">
-            <div class="card__logo-wrap">
-              <div class="card__logo-box">
-                <img src="assets/images/srttrail-logo.svg" alt="SRTtrail logo" class="card__logo-img" width="96" height="96" />
+      <main class="portfolio__grid">
+        <div class="portfolio__business">
+          <article class="card card--business card--delay-1">
+            <div class="card__bg-grid"></div>
+            <div class="card__body">
+              <div class="card__logo-wrap">
+                <div class="card__logo-box">
+                  <img
+                    src="assets/images/srttrail-logo.svg"
+                    alt="SRTtrail logo"
+                    class="card__logo-img"
+                    width="96"
+                    height="96"
+                  />
+                </div>
+                <span class="card__logo-text"
+                  >SRTtrail<span class="card__title-accent">.dev</span></span
+                >
               </div>
-              <span class="card__logo-text">SRTtrail<span class="card__title-accent">.dev</span></span>
+
+              <h2 class="card__title">
+                Let's Build Your<br />
+                <span class="card__title-accent">Digital Home</span>
+              </h2>
+
+              <p class="card__subtitle card__subtitle--gap-lg">
+                I craft beautiful, lightning-fast digital homes for growing
+                brands and small businesses. By combining custom design with
+                strategic positioning, I deliver websites you can truly own,
+                without the bloated budgets or cold, technical jargon of big
+                agencies. Let's turn your vision into a platform that actively
+                drives your business forward.
+              </p>
+
+              <a
+                class="card__button card__button--primary"
+                id="btn-business"
+                href="/business/"
+                >Start Your Project ↗</a
+              >
+
+              <h3 class="card__subtitle card__subtitle--heading">
+                Key Capabilities
+              </h3>
+              <div class="card__tag-group">
+                <span class="card__tag">Custom Branding</span>
+                <span class="card__tag">Web Hosting</span>
+                <span class="card__tag">SEO Optimization</span>
+                <span class="card__tag">Accessibility</span>
+              </div>
+
+              <h3 class="card__subtitle card__subtitle--heading">Projects</h3>
+              <div class="project-list">
+                <div
+                  class="project-item project-item--static"
+                  aria-label="Shipping with Purpose project preview"
+                >
+                  <div class="project-item__icon" aria-hidden="true">
+                    <img
+                      src="assets/images/swp-logo.svg"
+                      alt=""
+                      class="project-item__icon-image"
+                      width="32"
+                      height="32"
+                    />
+                  </div>
+                  <div class="project-item__content">
+                    <span class="project-item__name"
+                      >Shipping with Purpose</span
+                    >
+                    <span class="project-item__meta"
+                      >Portfolio case study available on request</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="project-item project-item--static"
+                  aria-label="Fran's Flowers project preview"
+                >
+                  <div class="project-item__icon" aria-hidden="true">🌻</div>
+                  <div class="project-item__content">
+                    <span class="project-item__name">Fran's Flowers</span>
+                    <span class="project-item__meta"
+                      >Brand and storefront concept</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="project-item project-item--static"
+                  aria-label="NASA Info Gallery project preview"
+                >
+                  <div class="project-item__icon" aria-hidden="true">🚀</div>
+                  <div class="project-item__content">
+                    <span class="project-item__name">NASA Info Gallery</span>
+                    <span class="project-item__meta"
+                      >Interactive educational web experience</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="project-item project-item--static"
+                  aria-label="Lorel's Routine Manager project preview"
+                >
+                  <div class="project-item__icon" aria-hidden="true">📅</div>
+                  <div class="project-item__content">
+                    <span class="project-item__name"
+                      >Lorel's Routine Manager</span
+                    >
+                    <span class="project-item__meta"
+                      >Workflow and scheduling utility</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__footer">
+                <h3 class="card__subtitle card__subtitle--heading">
+                  Lighthouse Scores
+                </h3>
+                <div class="metric-grid">
+                  <div class="metric-item">
+                    <div class="metric-item__circle">100</div>
+                    <span class="metric-item__label">Performance</span>
+                  </div>
+                  <div class="metric-item">
+                    <div class="metric-item__circle">100</div>
+                    <span class="metric-item__label">Accessibility</span>
+                  </div>
+                  <div class="metric-item">
+                    <div class="metric-item__circle">100</div>
+                    <span class="metric-item__label">SEO</span>
+                  </div>
+                </div>
+              </div>
             </div>
+          </article>
+        </div>
 
-            <h2 class="card__title">
-              Let's Build Your<br>
-              <span class="card__title-accent">Digital Home</span>
-            </h2>
+        <div class="portfolio__profile">
+          <img
+            src="assets/images/dev-avatar.webp"
+            alt="Vedant Patel Portrait"
+            class="portfolio__avatar"
+            width="224"
+            height="224"
+            fetchpriority="high"
+          />
 
-            <p class="card__subtitle card__subtitle--gap-lg">
-              I craft beautiful, lightning-fast digital homes for growing brands and small businesses. By combining custom design with strategic positioning, I deliver websites you can truly own, without the bloated budgets or cold, technical jargon of big agencies. Let's turn your vision into a platform that actively drives your business forward.
-            </p>
+          <article class="card card--bio card--delay-2">
+            <div class="card__body">
+              <h1 class="card__title card__title--h1 card__title--flush">
+                Vedant Patel
+              </h1>
+              <p
+                class="card__subtitle card__subtitle--heading card__subtitle--meta"
+              >
+                Founder of SRTtrail.dev &amp;<br />Student at ASU
+              </p>
 
-            <a class="card__button card__button--primary" id="btn-business" href="/business/">Start Your Project ↗</a>
+              <p class="card__subtitle card__subtitle--gap-lg">
+                Passionate about blending clean logic with strategic business
+                goals. Whether I'm advancing my IT studies at ASU, optimizing
+                daily operational workflows, or engineering high-performance web
+                solutions, my focus is always on building digital experiences
+                that engage users and deliver measurable results.
+              </p>
 
-            <h3 class="card__subtitle card__subtitle--heading">Key Capabilities</h3>
-            <div class="card__tag-group">
-              <span class="card__tag">Custom Branding</span>
-              <span class="card__tag">Web Hosting</span>
-              <span class="card__tag">SEO Optimization</span>
-              <span class="card__tag">Accessibility</span>
+              <nav class="social-nav" aria-label="Social and Contact Links">
+                <a
+                  href="https://www.instagram.com/scortchtrail/"
+                  class="social-nav__btn"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="social-nav__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/ScorchTrail"
+                  class="social-nav__btn"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="social-nav__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/vp-srttraill/"
+                  class="social-nav__btn"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="social-nav__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    ></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a
+                  href="tel:+15022108984"
+                  class="social-nav__btn"
+                  aria-label="Call 502-210-8984"
+                >
+                  <svg
+                    class="social-nav__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.61 2.62a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.46-1.27a2 2 0 0 1 2.11-.45c.84.28 1.72.49 2.62.61A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                </a>
+              </nav>
             </div>
+          </article>
+        </div>
 
-            <h3 class="card__subtitle card__subtitle--heading">Projects</h3>
-            <div class="project-list">
-              <div class="project-item project-item--static" aria-label="Shipping with Purpose project preview">
-                <div class="project-item__icon" aria-hidden="true">
-                  <img src="assets/images/swp-logo.svg" alt="" class="project-item__icon-image" width="32" height="32" />
-                </div>
-                <div class="project-item__content">
-                  <span class="project-item__name">Shipping with Purpose</span>
-                  <span class="project-item__meta">Portfolio case study available on request</span>
-                </div>
+        <div class="portfolio__personal">
+          <article class="card card--personal card--delay-3">
+            <div class="card__bg-notebook"></div>
+            <div class="card__body">
+              <h2 class="card__title card__title--handwritten">
+                When I'm not coding...
+              </h2>
+
+              <div
+                class="card__tag-group card__tag-group--center card__tag-group--flush"
+              >
+                <span class="card__tag"
+                  ><span aria-hidden="true">🎲</span> D&amp;D</span
+                >
+                <span class="card__tag"
+                  ><span aria-hidden="true">🍳</span> Cooking</span
+                >
+                <span class="card__tag"
+                  ><span aria-hidden="true">🥐</span> Baking</span
+                >
+                <span class="card__tag"
+                  ><span aria-hidden="true">🏓</span> Pickleball</span
+                >
+                <span class="card__tag"
+                  ><span aria-hidden="true">🌊</span> Water Sports</span
+                >
               </div>
-              <div class="project-item project-item--static" aria-label="Fran's Flowers project preview">
-                <div class="project-item__icon" aria-hidden="true">🌻</div>
-                <div class="project-item__content">
-                  <span class="project-item__name">Fran's Flowers</span>
-                  <span class="project-item__meta">Brand and storefront concept</span>
-                </div>
-              </div>
-              <div class="project-item project-item--static" aria-label="NASA Info Gallery project preview">
-                <div class="project-item__icon" aria-hidden="true">🚀</div>
-                <div class="project-item__content">
-                  <span class="project-item__name">NASA Info Gallery</span>
-                  <span class="project-item__meta">Interactive educational web experience</span>
-                </div>
-              </div>
-              <div class="project-item project-item--static" aria-label="Lorel's Routine Manager project preview">
-                <div class="project-item__icon" aria-hidden="true">📅</div>
-                <div class="project-item__content">
-                  <span class="project-item__name">Lorel's Routine Manager</span>
-                  <span class="project-item__meta">Workflow and scheduling utility</span>
-                </div>
+
+              <div class="card__footer card__footer--flush">
+                <button
+                  class="card__button card__button--dark card__button--flush card__button--coming-soon"
+                  type="button"
+                  disabled
+                  aria-disabled="true"
+                >
+                  <span aria-hidden="true">📖</span>
+                  <span>Open Recipe Book</span>
+                </button>
+                <span class="card__caption card__caption--coming-soon"
+                  >Coming Soon</span
+                >
               </div>
             </div>
+          </article>
+        </div>
 
-            <div class="card__footer">
-              <h3 class="card__subtitle card__subtitle--heading">Lighthouse Scores</h3>
-              <div class="metric-grid">
-                <div class="metric-item"><div class="metric-item__circle">100</div><span class="metric-item__label">Performance</span></div>
-                <div class="metric-item"><div class="metric-item__circle">100</div><span class="metric-item__label">Accessibility</span></div>
-                <div class="metric-item"><div class="metric-item__circle">100</div><span class="metric-item__label">Best Practices</span></div>
-                <div class="metric-item"><div class="metric-item__circle">100</div><span class="metric-item__label">SEO</span></div>
+        <div class="portfolio__corporate">
+          <article class="card card--corporate card--delay-1">
+            <div class="card__bg-grid"></div>
+            <div class="card__body">
+              <div class="card__group">
+                <span class="card__subtitle--label"
+                  ><svg
+                    class="card__label-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M3 9 12 4l9 5-9 5-9-5Z"></path>
+                    <path
+                      d="M7 11.5v4.2c0 .5 2.2 2.3 5 2.3s5-1.8 5-2.3v-4.2"
+                    ></path>
+                    <path d="M21 10v5"></path>
+                  </svg>
+                  ASU | Information Technology</span
+                >
+                <span class="card__subtitle--label"
+                  ><svg
+                    class="card__label-icon"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="5" width="18" height="12" rx="2"></rect>
+                    <path d="M8 21h8"></path>
+                    <path d="M12 17v4"></path>
+                  </svg>
+                  TripleTen | Software Engineering</span
+                >
               </div>
-            </div>
-          </div>
-        </article>
-      </div>
 
-      <div class="portfolio__profile">
-        <img src="assets/images/dev-avatar.webp" alt="Vedant Patel Portrait" class="portfolio__avatar" width="224" height="224" fetchpriority="high" />
+              <h2 class="card__title card__title--flush">Software Developer</h2>
+              <p class="card__subtitle card__subtitle--strong">
+                Technical Sales · Client Consulting
+              </p>
 
-        <article class="card card--bio card--delay-2">
-          <div class="card__body">
-            <h1 class="card__title card__title--h1 card__title--flush">Vedant Patel</h1>
-            <p class="card__subtitle card__subtitle--heading card__subtitle--meta">Founder of SRTtrail.dev &amp;<br>Student at ASU</p>
+              <p class="card__subtitle card__subtitle--gap-lg">
+                I operate as a full-stack powerhouse, seamlessly bridging the
+                gap between complex engineering and overarching business
+                objectives. Leveraging AI-driven code generation, and rigorous
+                layout methodologies, I architect scalable, accessible
+                applications. From technical scoping to delivering high-stakes
+                pitches, I translate intricate software solutions into clear,
+                actionable client value.
+              </p>
 
-            <p class="card__subtitle card__subtitle--gap-lg">
-              Passionate about blending clean logic with strategic business goals. Whether I'm advancing my IT studies at ASU, optimizing daily operational workflows, or engineering high-performance web solutions, my focus is always on building digital experiences that engage users and deliver measurable results.
-            </p>
-
-            <nav class="social-nav" aria-label="Social and Contact Links">
-              <a href="https://www.instagram.com/scortchtrail/" class="social-nav__btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                <svg class="social-nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <a
+                class="card__button card__button--light"
+                id="btn-resume"
+                href="./assets/documents/resume-vedant.pdf"
+                download="resume-vedant.pdf"
+              >
+                <svg
+                  class="card__button-icon"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3v12"></path>
+                  <path d="m7 10 5 5 5-5"></path>
+                  <path d="M5 21h14"></path>
+                </svg>
+                <span>Download Resume PDF</span>
               </a>
-              <a href="https://github.com/ScorchTrail" class="social-nav__btn" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                <svg class="social-nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              </a>
-              <a href="https://www.linkedin.com/in/vp-srttraill/" class="social-nav__btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <svg class="social-nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              </a>
-              <a href="tel:+15022108984" class="social-nav__btn" aria-label="Call 502-210-8984">
-                <svg class="social-nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.61 2.62a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.46-1.27a2 2 0 0 1 2.11-.45c.84.28 1.72.49 2.62.61A2 2 0 0 1 22 16.92z"></path></svg>
-              </a>
-            </nav>
-          </div>
-        </article>
-      </div>
 
-      <div class="portfolio__personal">
-        <article class="card card--personal card--delay-3">
-          <div class="card__bg-notebook"></div>
-          <div class="card__body">
-            <h2 class="card__title card__title--handwritten">When I'm not coding...</h2>
-
-            <div class="card__tag-group card__tag-group--center card__tag-group--flush">
-              <span class="card__tag"><span aria-hidden="true">🎲</span> D&amp;D</span>
-              <span class="card__tag"><span aria-hidden="true">🍳</span> Cooking</span>
-              <span class="card__tag"><span aria-hidden="true">🥐</span> Baking</span>
-              <span class="card__tag"><span aria-hidden="true">🏓</span> Pickleball</span>
-              <span class="card__tag"><span aria-hidden="true">🌊</span> Water Sports</span>
-            </div>
-
-            <div class="card__footer card__footer--flush">
-              <button class="card__button card__button--dark card__button--flush card__button--coming-soon" type="button" disabled aria-disabled="true">
-                <span aria-hidden="true">📖</span>
-                <span>Open Recipe Book</span>
-              </button>
-              <span class="card__caption card__caption--coming-soon">Coming Soon</span>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="portfolio__corporate">
-        <article class="card card--corporate card--delay-1">
-          <div class="card__bg-grid"></div>
-          <div class="card__body">
-            <div class="card__group">
-              <span class="card__subtitle--label"><svg class="card__label-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5-9 5-9-5Z"></path><path d="M7 11.5v4.2c0 .5 2.2 2.3 5 2.3s5-1.8 5-2.3v-4.2"></path><path d="M21 10v5"></path></svg> ASU | Information Technology</span>
-              <span class="card__subtitle--label"><svg class="card__label-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="12" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path></svg> TripleTen | Software Engineering</span>
-            </div>
-
-            <h2 class="card__title card__title--flush">Software Developer</h2>
-            <p class="card__subtitle card__subtitle--strong">Technical Sales · Client Consulting</p>
-
-            <p class="card__subtitle card__subtitle--gap-lg">
-              I operate as a full-stack powerhouse, seamlessly bridging the gap between complex engineering and overarching business objectives. Leveraging AI-driven code generation, and rigorous layout methodologies, I architect scalable, accessible applications. From technical scoping to delivering high-stakes pitches, I translate intricate software solutions into clear, actionable client value.
-            </p>
-
-            <a class="card__button card__button--light" id="btn-resume" href="./assets/documents/resume-vedant.pdf" download="resume-vedant.pdf">
-              <svg class="card__button-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>
-              <span>Download Resume PDF</span>
-            </a>
-
-            <h3 class="card__subtitle card__subtitle--heading">Core Skills</h3>
-            <div class="card__tag-group">
-              <span class="card__tag">HTML / CSS</span>
-              <span class="card__tag">JavaScript</span>
-              <span class="card__tag">Java</span>
-              <span class="card__tag">Python</span>
-              <span class="card__tag">Sales</span>
-              <span class="card__tag">Marketing</span>
-              <span class="card__tag">AI Tools</span>
-              <span class="card__tag">MS Tools</span>
-            </div>
-
-            <h3 class="card__subtitle card__subtitle--heading">Recent Experience</h3>
-            <div class="experience-list">
-              <div class="experience-item">
-                <span class="experience-role">Operations Manager</span>
-                <span class="experience-company">Shipping w/ Purpose</span>
+              <h3 class="card__subtitle card__subtitle--heading">
+                Core Skills
+              </h3>
+              <div class="card__tag-group">
+                <span class="card__tag">HTML / CSS</span>
+                <span class="card__tag">JavaScript</span>
+                <span class="card__tag">Java</span>
+                <span class="card__tag">Python</span>
+                <span class="card__tag">Sales</span>
+                <span class="card__tag">Marketing</span>
+                <span class="card__tag">AI Tools</span>
+                <span class="card__tag">MS Tools</span>
               </div>
-              <div class="experience-item">
-                <span class="experience-role">Tech Consultant</span>
-                <span class="experience-company">SRTtrail.dev</span>
+
+              <h3 class="card__subtitle card__subtitle--heading">
+                Recent Experience
+              </h3>
+              <div class="experience-list">
+                <div class="experience-item">
+                  <span class="experience-role">Operations Manager</span>
+                  <span class="experience-company">Shipping w/ Purpose</span>
+                </div>
+                <div class="experience-item">
+                  <span class="experience-role">Tech Consultant</span>
+                  <span class="experience-company">SRTtrail.dev</span>
+                </div>
+                <div class="experience-item">
+                  <span class="experience-role">Computer Specialist</span>
+                  <span class="experience-company">Data Doctors</span>
+                </div>
+                <div class="experience-item">
+                  <span class="experience-role">Assistant Manager</span>
+                  <span class="experience-company">Domino's</span>
+                </div>
+                <div class="experience-item">
+                  <span class="experience-role">Teacher Assistant</span>
+                  <span class="experience-company">Marion County ATC</span>
+                </div>
               </div>
-              <div class="experience-item">
-                <span class="experience-role">Computer Specialist</span>
-                <span class="experience-company">Data Doctors</span>
-              </div>
-              <div class="experience-item">
-                <span class="experience-role">Assistant Manager</span>
-                <span class="experience-company">Domino's</span>
-              </div>
-              <div class="experience-item">
-                <span class="experience-role">Teacher Assistant</span>
-                <span class="experience-company">Marion County ATC</span>
+
+              <div class="card__footer">
+                <h3 class="card__subtitle card__subtitle--heading">
+                  Performance Metrics
+                </h3>
+                <div class="metric-grid">
+                  <div class="metric-item">
+                    <span class="metric-item__value">3+</span
+                    ><span class="metric-item__label">Yrs Exp</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-item__value">12</span
+                    ><span class="metric-item__label">Projects</span>
+                  </div>
+                  <div class="metric-item">
+                    <span class="metric-item__value">3.5</span
+                    ><span class="metric-item__label">GPA</span>
+                  </div>
+                </div>
               </div>
             </div>
+          </article>
+        </div>
+      </main>
 
-            <div class="card__footer">
-              <h3 class="card__subtitle card__subtitle--heading">Performance Metrics</h3>
-              <div class="metric-grid">
-                <div class="metric-item"><span class="metric-item__value">3+</span><span class="metric-item__label">Yrs Exp</span></div>
-                <div class="metric-item"><span class="metric-item__value">12</span><span class="metric-item__label">Projects</span></div>
-                <div class="metric-item"><span class="metric-item__value">3.5</span><span class="metric-item__label">GPA</span></div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </main>
+      <footer class="footer">
+        <span class="footer__text">© SRTtrail.dev | Vedant Patel</span>
+      </footer>
+    </div>
 
-    <footer class="footer">
-      <span class="footer__text">© SRTtrail.dev | Vedant Patel</span>
-    </footer>
-  </div>
-
-  <script src="js/app.js" defer></script>
-</body>
+    <script src="js/app.js" defer></script>
+  </body>
 </html>

@@ -16,7 +16,9 @@
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   overflow: hidden;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
   animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
   z-index: 10;
 }
@@ -39,7 +41,13 @@
 }
 
 .card--business {
-  --card-bg: linear-gradient(155deg, var(--color-primary-lt) 0%, var(--color-primary) 35%, var(--color-primary-md) 70%, var(--color-primary-dk) 100%);
+  --card-bg: linear-gradient(
+    155deg,
+    var(--color-primary-lt) 0%,
+    var(--color-primary) 35%,
+    var(--color-primary-md) 70%,
+    var(--color-primary-dk) 100%
+  );
   --card-text: var(--color-white);
   --card-muted: rgba(255, 255, 255, 0.8);
   --card-border: transparent;
@@ -50,7 +58,12 @@
 }
 
 .card--corporate {
-  --card-bg: linear-gradient(155deg, var(--color-corp-1) 0%, var(--color-corp-2) 50%, var(--color-black) 100%);
+  --card-bg: linear-gradient(
+    155deg,
+    var(--color-corp-1) 0%,
+    var(--color-corp-2) 50%,
+    var(--color-black) 100%
+  );
   --card-text: var(--color-white);
   --card-muted: rgba(255, 255, 255, 0.5);
   --card-border: rgba(255, 255, 255, 0.05);
@@ -278,7 +291,11 @@
   font-weight: 800;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.25s, background 0.25s, color 0.25s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.25s,
+    background 0.25s,
+    color 0.25s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -383,8 +400,3 @@
   align-items: center;
   padding-top: 0;
 }
-
-
-
-
-
