@@ -1,3 +1,24 @@
+/* Highlight Shipping with Purpose tile on hover */
+.project-item--swp {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+  cursor: pointer;
+}
+.project-item--swp:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+  transform: scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+.project-item--swp:active,
+.project-item--swp:focus-visible {
+  background: var(--color-white);
+  color: var(--color-black);
+  transform: none;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
 /* =============================================
    COMPONENTS: PORTFOLIO GRID SYSTEM
    ============================================= */
