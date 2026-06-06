@@ -4,6 +4,21 @@
   justify-content: space-around;
 }
 
+.metric-grid--lighthouse {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: stretch;
+  align-items: start;
+}
+
+.metric-grid--lighthouse .metric-item {
+  min-width: 0;
+}
+
+.metric-grid--lighthouse .metric-item__label {
+  max-width: 11ch;
+}
+
 .metric-item {
   display: flex;
   flex-direction: column;
@@ -25,6 +40,12 @@
   color: var(--color-accent);
 }
 
+.card--business .metric-item__circle {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+}
+
 .metric-item__value {
   font-family: var(--font-heading);
   font-size: var(--text-h5);
@@ -43,11 +64,19 @@
   text-wrap: balance;
 }
 
+.card--business .metric-item__label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 @media (max-width: 640px) {
   .metric-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: stretch;
+  }
+
+  .metric-grid--lighthouse {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .metric-item {

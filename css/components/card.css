@@ -43,10 +43,10 @@
 .card--business {
   --card-bg: linear-gradient(
     155deg,
-    var(--color-primary-lt) 0%,
-    var(--color-primary) 35%,
-    var(--color-primary-md) 70%,
-    var(--color-primary-dk) 100%
+    var(--color-primary) 0%,
+    var(--color-primary-md) 42%,
+    #003628 74%,
+    #001b14 100%
   );
   --card-text: var(--color-white);
   --card-muted: rgba(255, 255, 255, 0.8);
@@ -151,7 +151,7 @@
 
 .card__title {
   font-family: var(--font-heading);
-  font-size: var(--text-h3);
+  font-size: clamp(var(--text-h5), 1.45rem + 0.6vw, var(--text-h4));
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -185,14 +185,14 @@
 }
 
 .card__subtitle {
-  font-size: var(--text-sm);
+  font-size: clamp(var(--text-sm), 0.77rem + 0.2vw, var(--text-base));
   line-height: 1.6;
   color: var(--card-muted);
   margin-bottom: var(--space-24);
 }
 
 .card__subtitle--heading {
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -230,7 +230,7 @@
 
 /* Combined modifiers for cleaner HTML */
 .card__subtitle--label {
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -254,6 +254,11 @@
   margin-bottom: var(--space-32);
 }
 
+.card--corporate .card__tag-group {
+  row-gap: var(--space-8);
+  column-gap: var(--space-8);
+}
+
 .card__tag-group--center {
   justify-content: center;
 }
@@ -273,6 +278,12 @@
   font-size: var(--text-sm);
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.card--corporate .card__tag {
+  padding: var(--space-8) var(--space-16);
+  font-size: clamp(0.8rem, 0.77rem + 0.12vw, 1rem);
+  line-height: 1.25;
 }
 
 .card--personal .card__tag {
@@ -380,7 +391,7 @@
   align-self: center;
   margin-top: var(--space-8);
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: none;

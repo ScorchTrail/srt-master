@@ -1,7 +1,7 @@
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
+  gap: var(--space-8);
   margin-bottom: var(--space-32);
   position: relative;
   z-index: 10;
@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: var(--space-8);
   padding-bottom: var(--space-8);
 }
 
@@ -20,14 +21,16 @@
 }
 
 .experience-role {
-  font-size: var(--text-sm);
+  font-size: clamp(0.8rem, 0.77rem + 0.12vw, 1rem);
+  line-height: 1.25;
   font-weight: 600;
   color: var(--color-white);
 }
 
 .experience-company {
-  font-size: var(--text-xs);
-  color: rgba(255, 255, 255, 0.5);
+  font-size: clamp(0.64rem, 0.62rem + 0.1vw, 0.8rem);
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.25;
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 0.05em;
