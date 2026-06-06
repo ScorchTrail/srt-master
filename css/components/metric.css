@@ -9,6 +9,12 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: stretch;
   align-items: start;
+  justify-items: center;
+}
+
+.card--business .metric-grid--lighthouse {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .metric-grid--lighthouse .metric-item {
@@ -16,7 +22,14 @@
 }
 
 .metric-grid--lighthouse .metric-item__label {
+  display: block;
   max-width: 11ch;
+  min-height: calc(2 * 1.25em);
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.18);
+  text-align: center;
 }
 
 .metric-item {
@@ -77,6 +90,11 @@
 
   .metric-grid--lighthouse {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card--business .metric-grid--lighthouse {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .metric-item {
