@@ -55,11 +55,24 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+.project-item__icon--clear {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
 .project-item__icon-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.project-item__icon-image--nasa {
+  width: auto;
+  height: auto;
+  max-width: 78%;
+  max-height: 78%;
+  margin: auto;
 }
 
 .project-item__content {
