@@ -50,6 +50,11 @@
   flex-shrink: 0;
 }
 
+.project-item__icon--white {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .project-item__icon-image {
   width: 100%;
   height: 100%;
