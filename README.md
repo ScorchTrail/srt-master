@@ -48,6 +48,11 @@ Then open:
 Deploy as a static site (GitHub Pages, Cloudflare Pages, Netlify, etc.).
 Keep `CNAME` at repo root for custom domain mapping.
 
+Deploy the lead Worker separately with `npx wrangler deploy`. The Worker uses a
+Durable Object binding to suppress duplicate lead notifications for the same
+email and form stage for two hours; Wrangler applies its required migration
+from `wrangler.toml` during deployment.
+
 ## Maintainer
 
 Vedant Patel  

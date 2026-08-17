@@ -5,6 +5,14 @@ compatibility_date = "2026-04-15"
 [vars]
 ALLOWED_ORIGIN = "https://srttrail.dev"
 
+[[durable_objects.bindings]]
+name = "LEAD_GUARD"
+class_name = "LeadSubmissionGuard"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["LeadSubmissionGuard"]
+
 # Optional dashboard vars:
 # LEAD_TO_EMAIL = "owner@example.com"
 # LEAD_FROM_EMAIL = "Site Leads <leads@example.com>"

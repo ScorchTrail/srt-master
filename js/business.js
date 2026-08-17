@@ -177,6 +177,8 @@ const state = {
   successTimer: null,
   hasSentLeadStart: false,
   hasSentLeadComplete: false,
+  isSubmittingWizard: false,
+  isSubmittingLeadStart: false,
   isSubmittingLeadComplete: false,
   radarChart: null,
 };
@@ -739,13 +741,23 @@ async function sendLead(status, includeSummary = false) {
 }
 
 async function maybeSendStartedLead() {
-  if (state.currentStep !== 0 || state.hasSentLeadStart) {
+  if (
+    state.currentStep !== 0 ||
+    state.hasSentLeadStart ||
+    state.isSubmittingLeadStart
+  ) {
     return;
   }
 
-  await sendLead("Started Discovery Form");
-  state.hasSentLeadStart = true;
-  persistData();
+  state.isSubmittingLeadStart = true;
+
+  try {
+    await sendLead("Started Discovery Form");
+    state.hasSentLeadStart = true;
+    persistData();
+  } finally {
+    state.isSubmittingLeadStart = false;
+  }
 }
 
 function computeMetrics() {
@@ -1010,30 +1022,40 @@ async function handleWizardSubmit(event) {
     return;
   }
 
-  try {
-    await maybeSendStartedLead();
-  } catch (error) {
-    console.error(error);
-    showToast(
-      "Lead Capture Failed",
-      "We could not save your first-step details right now, but you can still continue.",
-    );
-  }
-
-  if (state.currentStep < pillarData.length - 1) {
-    state.currentStep += 1;
-    persistData();
-    renderStep();
-    const firstField = elements.contentDisplay.querySelector(
-      "input, textarea, button",
-    );
-    if (firstField instanceof HTMLElement) {
-      firstField.focus();
-    }
+  if (state.isSubmittingWizard) {
     return;
   }
 
-  finishAndCalculate();
+  state.isSubmittingWizard = true;
+
+  try {
+    try {
+      await maybeSendStartedLead();
+    } catch (error) {
+      console.error(error);
+      showToast(
+        "Lead Capture Failed",
+        "We could not save your first-step details right now, but you can still continue.",
+      );
+    }
+
+    if (state.currentStep < pillarData.length - 1) {
+      state.currentStep += 1;
+      persistData();
+      renderStep();
+      const firstField = elements.contentDisplay.querySelector(
+        "input, textarea, button",
+      );
+      if (firstField instanceof HTMLElement) {
+        firstField.focus();
+      }
+      return;
+    }
+
+    finishAndCalculate();
+  } finally {
+    state.isSubmittingWizard = false;
+  }
 }
 
 function handlePreviousStep() {
